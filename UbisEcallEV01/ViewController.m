@@ -132,6 +132,17 @@ NSString* idForVendor;
 
 
 
+- (BOOL)locationTxt:(UITextField *)locationTxt shouldChangeCharactersInRange:
+(NSRange)range replacementString:(NSString *)string
+{
+    //제한 할 글자 수
+    int maxLength = 5;
+    
+    //string은 현재 키보드에서 입력한 문자 한개를 의미한다.
+    if(string && [string length] && ([locationTxt.text length] >= maxLength))   return NO;
+    
+    return TRUE;
+}
 
 
 @end
