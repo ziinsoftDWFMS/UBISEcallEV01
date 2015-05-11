@@ -452,6 +452,7 @@
 				57E4F88F1AFF6BD6003F4ABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57E4F8901AFF6BD6003F4ABB /* Build configuration list for PBXNativeTarget "UbisEcallEV01Tests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +461,7 @@
 				57E4F8921AFF6BD6003F4ABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

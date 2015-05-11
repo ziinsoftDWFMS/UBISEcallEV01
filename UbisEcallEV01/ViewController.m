@@ -8,12 +8,18 @@
 
 @implementation ViewController
 
+
+BOOL navigateYN;
+NSString* idForVendor;
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
     UIDevice *device = [UIDevice currentDevice];
-    NSString* idForVendor = [device.identifierForVendor UUIDString];
+    idForVendor = [device.identifierForVendor UUIDString];
     
     NSLog(@">>>>>%@",idForVendor);
     //서버에서 결과 리턴받기
@@ -69,18 +75,18 @@
         
         // [self presentModalViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"IdentView"] animated:YES];
         
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        UIViewController *identViewController = [storyboard instantiateViewControllerWithIdentifier:@"IdentViewController"];
+        //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        //UIViewController *identViewController = [storyboard instantiateViewControllerWithIdentifier:@"IdentViewController"];
         
-        self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
-        [self presentViewController:identViewController animated:NO completion:nil];
+        //self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
+        //[self presentViewController:identViewController animated:NO completion:nil];
         
       //  identViewController.view.alpha = 0;
       //  [UIView animateWithDuration:0.5 animations:^{
       //      identViewController.view.alpha = 1;
       //  } completion:^(BOOL finished) {
       //         }];
-        
+        navigateYN = YES;
         
     }else{
         
@@ -89,7 +95,7 @@
         
         
         NSLog(@">>4566>>>1234%@",idForVendor);
-        
+        navigateYN = NO;
     }
     
 }
@@ -99,6 +105,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    if (navigateYN) {
+        [self performSegueWithIdentifier:@"showIdentiview" sender:self];
+    }
+}
 
 
 - (IBAction)click:(id)sender {
