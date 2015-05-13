@@ -148,7 +148,7 @@ NSString* idForVendor;
     }
     
     if([[self.locationTxt text] length] >= 6){//글자수 제한
-        return NO;
+      //  return NO;
     }
     
     return YES;
