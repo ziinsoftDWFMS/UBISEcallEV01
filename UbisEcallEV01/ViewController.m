@@ -17,7 +17,7 @@ NSString* idForVendor;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    _locationTxt.delegate = self;
     UIDevice *device = [UIDevice currentDevice];
     idForVendor = [device.identifierForVendor UUIDString];
     
@@ -30,7 +30,8 @@ NSString* idForVendor;
     //[param setValue:@"" forKey:@"hp"];
     
     [param setValue:@"S" forKey:@"gubun"];
-    [param setObject:@"EV01" forKey:@"code"];
+    [param setValue:@"EV01" forKey:@"code"];
+    
     [param setObject:idForVendor forKey:@"deviceId"];
     
     //deviceId
@@ -126,6 +127,9 @@ NSString* idForVendor;
     [param setObject:idForVendor forKey:@"deviceId"];
     [param setValue:self.locationTxt.text forKey:@"location"];
     
+    self.locationTxt.text = @"";
+    
+    
     NSString* str = [res stringWithUrl:@"emcInfoPush.do" VAL:param];
     
     NSLog(@" %@",str);
@@ -133,18 +137,21 @@ NSString* idForVendor;
 }
 
 
-
-- (BOOL)locationTxt:(UITextField *)locationTxt shouldChangeCharactersInRange:
-(NSRange)range replacementString:(NSString *)string
-{
-    //제한 할 글자 수
-    int maxLength = 5;
+- (BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)text{
+    NSLog(@" %@",self.locationTxt.text);
+    const char * _char = [text cStringUsingEncoding:NSUTF8StringEncoding];
+    int isBackSpace = strcmp(_char, "\b");
     
-    //string은 현재 키보드에서 입력한 문자 한개를 의미한다.
-    if(string && [string length] && ([locationTxt.text length] >= maxLength))   return NO;
+    if(isBackSpace == -8){//백스페이스
+        //is backspace
+        return YES;
+    }
     
-    return TRUE;
+    if([[self.locationTxt text] length] >= 6){//글자수 제한
+        return NO;
+    }
+    
+    return YES;
 }
-
 
 @end
