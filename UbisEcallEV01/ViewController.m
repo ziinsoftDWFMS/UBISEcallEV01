@@ -30,6 +30,7 @@ NSString* idForVendor;
     //[param setValue:@"" forKey:@"hp"];
     
     [param setValue:@"S" forKey:@"gubun"];
+    [param setValue:@"EV01" forKey:@"code"];
     
     [param setObject:idForVendor forKey:@"deviceId"];
     
@@ -109,6 +110,7 @@ NSString* idForVendor;
 - (void)viewDidAppear:(BOOL)animated {
     
     if (navigateYN) {
+        navigateYN = NO;
         [self performSegueWithIdentifier:@"showIdentiview" sender:self];
     }
 }
@@ -121,6 +123,7 @@ NSString* idForVendor;
     CAllServer* res = [CAllServer alloc];
     NSMutableDictionary* param = [[NSMutableDictionary alloc] init];
     [param setObject:@"EV01" forKey:@"code"];
+    [param setValue:@"S" forKey:@"gubun"];
     [param setObject:idForVendor forKey:@"deviceId"];
     [param setValue:self.locationTxt.text forKey:@"location"];
     
