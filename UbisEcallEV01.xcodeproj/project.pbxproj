@@ -19,6 +19,10 @@
 		57E4F89F1AFF6D7E003F4ABB /* CAllServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F89E1AFF6D7E003F4ABB /* CAllServer.m */; };
 		BAB80F3F1B048429005D3F23 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB80F3E1B048429005D3F23 /* Icon.png */; };
 		BAB80F411B048467005D3F23 /* ic_elev.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB80F401B048467005D3F23 /* ic_elev.png */; };
+		BAB80F431B04B1BD005D3F23 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB80F421B04B1BD005D3F23 /* SystemConfiguration.framework */; };
+		BAB80F451B04B1C5005D3F23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB80F441B04B1C5005D3F23 /* UIKit.framework */; };
+		BAB80F471B04B1CE005D3F23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB80F461B04B1CE005D3F23 /* Foundation.framework */; };
+		BAB80F491B04B1D8005D3F23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB80F481B04B1D8005D3F23 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		57E4F8A01AFF6D83003F4ABB /* CAllServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAllServer.h; sourceTree = "<group>"; };
 		BAB80F3E1B048429005D3F23 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		BAB80F401B048467005D3F23 /* ic_elev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_elev.png; sourceTree = "<group>"; };
+		BAB80F421B04B1BD005D3F23 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BAB80F441B04B1C5005D3F23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BAB80F461B04B1CE005D3F23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BAB80F481B04B1D8005D3F23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAB80F491B04B1D8005D3F23 /* CoreGraphics.framework in Frameworks */,
+				BAB80F471B04B1CE005D3F23 /* Foundation.framework in Frameworks */,
+				BAB80F451B04B1C5005D3F23 /* UIKit.framework in Frameworks */,
+				BAB80F431B04B1BD005D3F23 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +88,10 @@
 		57E4F8611AFF6BD5003F4ABB = {
 			isa = PBXGroup;
 			children = (
+				BAB80F481B04B1D8005D3F23 /* CoreGraphics.framework */,
+				BAB80F461B04B1CE005D3F23 /* Foundation.framework */,
+				BAB80F441B04B1C5005D3F23 /* UIKit.framework */,
+				BAB80F421B04B1BD005D3F23 /* SystemConfiguration.framework */,
 				57E4F86C1AFF6BD6003F4ABB /* UbisEcallEV01 */,
 				57E4F8861AFF6BD6003F4ABB /* UbisEcallEV01Tests */,
 				57E4F86B1AFF6BD6003F4ABB /* Products */,
