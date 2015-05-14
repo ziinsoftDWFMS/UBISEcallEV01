@@ -157,6 +157,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_elev.png" width="513" height="517"/>
+        <image name="ic_elev.png" width="446" height="445"/>
     </resources>
 </document>

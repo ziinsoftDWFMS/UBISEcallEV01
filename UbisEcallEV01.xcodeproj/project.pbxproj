@@ -14,11 +14,11 @@
 		57E4F87B1AFF6BD6003F4ABB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F87A1AFF6BD6003F4ABB /* Images.xcassets */; };
 		57E4F87E1AFF6BD6003F4ABB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F87C1AFF6BD6003F4ABB /* LaunchScreen.xib */; };
 		57E4F88A1AFF6BD6003F4ABB /* UbisEcallEV01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F8891AFF6BD6003F4ABB /* UbisEcallEV01Tests.m */; };
-		57E4F8951AFF6C64003F4ABB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F8941AFF6C64003F4ABB /* icon.png */; };
-		57E4F8971AFF6C81003F4ABB /* ic_elev.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F8961AFF6C81003F4ABB /* ic_elev.png */; };
 		57E4F8991AFF6D66003F4ABB /* IdentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F8981AFF6D66003F4ABB /* IdentViewController.m */; };
 		57E4F89C1AFF6D73003F4ABB /* DwfmsSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F89B1AFF6D73003F4ABB /* DwfmsSegue.m */; };
 		57E4F89F1AFF6D7E003F4ABB /* CAllServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F89E1AFF6D7E003F4ABB /* CAllServer.m */; };
+		BAB80F3F1B048429005D3F23 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB80F3E1B048429005D3F23 /* Icon.png */; };
+		BAB80F411B048467005D3F23 /* ic_elev.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB80F401B048467005D3F23 /* ic_elev.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		57E4F8831AFF6BD6003F4ABB /* UbisEcallEV01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UbisEcallEV01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E4F8881AFF6BD6003F4ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57E4F8891AFF6BD6003F4ABB /* UbisEcallEV01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UbisEcallEV01Tests.m; sourceTree = "<group>"; };
-		57E4F8941AFF6C64003F4ABB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		57E4F8961AFF6C81003F4ABB /* ic_elev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_elev.png; sourceTree = "<group>"; };
 		57E4F8981AFF6D66003F4ABB /* IdentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentViewController.m; sourceTree = "<group>"; };
 		57E4F89A1AFF6D6B003F4ABB /* IdentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentViewController.h; sourceTree = "<group>"; };
 		57E4F89B1AFF6D73003F4ABB /* DwfmsSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DwfmsSegue.m; sourceTree = "<group>"; };
 		57E4F89D1AFF6D78003F4ABB /* DwfmsSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DwfmsSegue.h; sourceTree = "<group>"; };
 		57E4F89E1AFF6D7E003F4ABB /* CAllServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAllServer.m; sourceTree = "<group>"; };
 		57E4F8A01AFF6D83003F4ABB /* CAllServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAllServer.h; sourceTree = "<group>"; };
+		BAB80F3E1B048429005D3F23 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BAB80F401B048467005D3F23 /* ic_elev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_elev.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +142,8 @@
 		57E4F8931AFF6C2D003F4ABB /* image */ = {
 			isa = PBXGroup;
 			children = (
-				57E4F8961AFF6C81003F4ABB /* ic_elev.png */,
-				57E4F8941AFF6C64003F4ABB /* icon.png */,
+				BAB80F401B048467005D3F23 /* ic_elev.png */,
+				BAB80F3E1B048429005D3F23 /* Icon.png */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -229,8 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				57E4F8791AFF6BD6003F4ABB /* Main.storyboard in Resources */,
-				57E4F8971AFF6C81003F4ABB /* ic_elev.png in Resources */,
-				57E4F8951AFF6C64003F4ABB /* icon.png in Resources */,
+				BAB80F411B048467005D3F23 /* ic_elev.png in Resources */,
+				BAB80F3F1B048429005D3F23 /* Icon.png in Resources */,
 				57E4F87E1AFF6BD6003F4ABB /* LaunchScreen.xib in Resources */,
 				57E4F87B1AFF6BD6003F4ABB /* Images.xcassets in Resources */,
 			);
