@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57DFE5D01B2EF5F5004CA5CA /* GlobalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DFE5CF1B2EF5F5004CA5CA /* GlobalData.m */; };
 		57E4F8701AFF6BD6003F4ABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F86F1AFF6BD6003F4ABB /* main.m */; };
 		57E4F8731AFF6BD6003F4ABB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F8721AFF6BD6003F4ABB /* AppDelegate.m */; };
 		57E4F8761AFF6BD6003F4ABB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F8751AFF6BD6003F4ABB /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57DFE5CE1B2EF5F5004CA5CA /* GlobalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalData.h; sourceTree = "<group>"; };
+		57DFE5CF1B2EF5F5004CA5CA /* GlobalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalData.m; sourceTree = "<group>"; };
 		57E4F86A1AFF6BD6003F4ABB /* UbisEcallEV01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UbisEcallEV01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E4F86E1AFF6BD6003F4ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57E4F86F1AFF6BD6003F4ABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				57E4F8771AFF6BD6003F4ABB /* Main.storyboard */,
 				57E4F87A1AFF6BD6003F4ABB /* Images.xcassets */,
 				57E4F87C1AFF6BD6003F4ABB /* LaunchScreen.xib */,
+				57DFE5CE1B2EF5F5004CA5CA /* GlobalData.h */,
+				57DFE5CF1B2EF5F5004CA5CA /* GlobalData.m */,
 				57E4F86D1AFF6BD6003F4ABB /* Supporting Files */,
 			);
 			path = UbisEcallEV01;
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57DFE5D01B2EF5F5004CA5CA /* GlobalData.m in Sources */,
 				57E4F89F1AFF6D7E003F4ABB /* CAllServer.m in Sources */,
 				57E4F8761AFF6BD6003F4ABB /* ViewController.m in Sources */,
 				57E4F89C1AFF6D73003F4ABB /* DwfmsSegue.m in Sources */,
